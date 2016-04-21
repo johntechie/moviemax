@@ -1,0 +1,8 @@
+.portfolio ul {
+				width: 5em;
+			}
+
+			.portfolio ul li {
+				display: inline;
+				list-style-type: none;
+			}

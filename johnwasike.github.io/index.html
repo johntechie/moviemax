@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/styles.css">
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+   <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>John Wasike</title>
+
+
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $DragOrientation: 2,
+              $PlayOrientation: 2,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+ <style>
+        
+        /* jssor slider arrow navigator skin 08 css */
+        /*
+        .jssora08l                  (normal)
+        .jssora08r                  (normal)
+        .jssora08l:hover            (normal mouseover)
+        .jssora08r:hover            (normal mouseover)
+        .jssora08l.jssora08ldn      (mousedown)
+        .jssora08r.jssora08rdn      (mousedown)
+        */
+        .jssora08l, .jssora08r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background: url('img/a08.png') no-repeat;
+            overflow: hidden;
+            opacity: .4;
+            filter: alpha(opacity=40);
+        }
+        .jssora08l { background-position: -5px -35px; }
+        .jssora08r { background-position: -65px -35px; }
+        .jssora08l:hover { background-position: -5px -35px; opacity: .8; filter:alpha(opacity=80); }
+        .jssora08r:hover { background-position: -65px -35px; opacity: .8; filter:alpha(opacity=80); }
+        .jssora08l.jssora08ldn { background-position: -5px -35px; opacity: .3; filter:alpha(opacity=30); }
+        .jssora08r.jssora08rdn { background-position: -65px -35px; opacity: .3; filter:alpha(opacity=30); }
+    </style>
+
+
+
+
+</head>
+<body style="color: black; font-family: 'Yanone Kaffeesatz', sans-serif; background-image: url (img/android_59.jpg)">
+   
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='#'><span>Home</span></a></li>
+   <li><a href='#'><span>Portfolio</span></a></li>
+   <li><a href='#'><span>Blog</span></a></li>
+   <li class='last'><a href='contact.html'><span>Contact</span></a></li>
+</ul>
+</div>
+
+<div class="main-div">
+  <img src="img/.jpg" class="home-img">
+	
+		<center><h1 style="color: black; font-family: 'Yanone Kaffeesatz', sans-serif; ">Hi! i am John Wasike</h1></center>
+		<center><h2>Software Engineer</h2></center>
+		<center>HTML/CSS  .  JAVA  .  PYTHON</center><br><br><br><br> 
+		<center><a href="contact.html"><img src="img/cntctme.jpg" class="picbutton"></a></center>
+
+
+</div>
+
+<div>
+   <p><br><br><br>
+   <center><h2>Check out My Work!</h2></center.
+
+   </p><br><br><br>
+   <div class="my-work">
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/android.png" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/android.png" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/android.png" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/android.png" />
+            </div>
+            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
+        
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora08l" style="top:8px;left:8px;width:50px;height:50px;" data-autocenter="1"></span>
+        <span data-u="arrowright" class="jssora08r" style="bottom:8px;right:8px;width:50px;height:50px;" data-autocenter="1"></span>
+    </div>
+    <script>
+        jssor_1_slider_init();
+    </script>
+
+
+   </div>
+</div>
+
+
+<div>
+   <p><br><br><br>
+      <center><h2>Ok! lets talk about me</h2></center>
+   </p>
+</div>
+
+
+<footer class="footer">
+  <div class="row">
+    <div class="small-12 medium-6 large-5 columns">
+      <p class="logo"><i class="fi-shield"></i> John Wasike</p> 
+      <p class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="#">Faq</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p class="copywrite">copywrite © 2015</p>
+    </div>
+    <div class="small-12 medium-6 large-4 columns">
+      <ul class="contact">
+        <li><p><i class="fi-marker"></i>Nairobi</p></li>
+        <li><p><i class="fi-telephone"></i>0703 222 393</p></li>
+        <li><p><i class="fi-mail"></i>jwasike2@gmail.com</p></li>
+      </ul>
+    </div>
+    <div class="small-12 medium-12 large-3 columns">
+      <p class="about">About John Wasike</p>
+      <p class="about subheader">Strike me down, and I will become more powerful than you could possibly imagine.</p>
+      <ul class="inline-list social">
+        <a href="#"><i class="fi-social-facebook"></i></a>
+        <a href="#"><i class="fi-social-twitter"></i></a>
+        <a href="#"><i class="fi-social-linkedin"></i></a>
+        <a href="https://github.com/johntechie"><i class="fi-social-github"></i></a>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+<html>
